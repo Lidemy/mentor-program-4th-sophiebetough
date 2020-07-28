@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>新拖延運動報名表單</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="form">
+      <h1 class="form__title">新拖延運動報名表單</h1>
+      <p class="form__info">活動日期：2020/12/10 ~ 2020/12/11</br>活動地點：台北市大安區新生南路二段1號</p>
+      <p class="form__attention">* 必填</p>
+      <div class="form-row">
+        <div class="form-row__title required">暱稱</div>
+        <div class="form-row__input"><input name="nickname" type="text" /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-row__title required">電子郵件</div>
+        <div class="form-row__input"><input name="e-mail" type="text" /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-row__title required">手機號碼</div>
+        <div class="form-row__input"><input name="phone" type="text" /></div>
+      </div>  
+      <div class="form-row">
+        <div class="form-row__title required">報名類型</div>
+        <div class="form-row__choice">
+          <label><input type="radio" value="bed" name="type" /> 躺在床上用想像力實作</label><label>
+          <input type="radio" value="floor" name="type" /> 趴在地上滑手機找現成的</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-row__title required">怎麼知道這個活動的？</div>
+        <div class="form-row__input">
+          <input name="reason" type="text" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-row__title">其他</div>
+        <div class="form-row__desc">對活動的一些建議</div>
+        <div class="form-row__input">
+          <input name="e-mail" type="text" />
+        </div>
+      </div>
+      <input class="form-row__btn" type="submit" />
+      <p class="form-row__info">請勿透過表單送出您的密碼。</p>
+    </form>
+  </div>
+  <footer class= "footer">© 2020 © Copyright. All rights Reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  background: #f0f0f0;
+}
+
+.wrapper {
+  background: #ffffff;
+  margin: 120px auto;
+  max-width: 645px;
+  box-shadow: -1.4px -1.4px 6px 0 rgba(0, 0, 0, 0.3);
+  border-top: 8px solid #fad312;
+  padding: 54px 42px;
+}
+
+.form__title {
+  margin: 0;
+  font-size: 32px;
+}
+
+.form__info {
+  margin-top: 30px;
+  line-height: 2em;
+  font-size: 14px;
+}
+
+.form__attention {
+  color: #e74149;
+  font-size: 16px;
+  margin-top: 18px
+}
+
+.form-row {
+  margin-top: 55px;
+}
+
+.form-row__title {
+  font-size: 20px;
+}
+
+.form-row__desc {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.form-row__input {
+  margin-top: 22px;
+}
+
+.form-row__input input {
+  border: 1px solid #d0d0d0;
+  font-size: 16px;
+  padding: 3px;
+  width: 45%;
+}
+
+.required:after {
+  content: '*';
+  color: #e74149;
+}
+
+.form-row__btn {
+  color: #000000;
+  font-size: 15px;
+  background: #fad312;
+  padding: 12px 32px;
+  margin-top: 60px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-row__info {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.footer {
+  background: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  padding: 24px 12px; 
+}
+
+.form-row__choice {
+  margin-top: 22px;
+}
+
+.form-row__choice label {
+  display: block;
+  margin-top: 14px;
+}
+
+@media(max-width: 768px) {
+  .wrapper {
+    margin: 0 10px;
+  }
+}

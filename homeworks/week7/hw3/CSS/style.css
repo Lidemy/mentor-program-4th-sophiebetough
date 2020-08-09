@@ -1,0 +1,133 @@
+body {
+  background: #FFFFE0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 100px auto;
+  max-width: 645px;
+  box-shadow: -1.4px -1.4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.input-block {
+  background: #FF8888;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+.input-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.input__title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.input__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type] {
+  border: 1px solid #d0d0d0;
+  font-size: 18px;
+  padding: 10px;
+  width: 80%;
+}
+
+.input__click {
+  padding: 10px;
+  width: 15%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input__click:hover {
+  background-color: #bbb;
+}
+
+.input__list li {
+  cursor: pointer;
+  padding: 14px 8px 12px 40px;
+  background: #f0f0f0;
+  font-size: 18px;
+  transition: 0.2s;
+  position: relative;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__list li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.input__list li:hover {
+  background: #DCDCDC;
+}
+
+.input__list li.checked {
+  background: #A9A9A9 ;
+  color: white;
+  text-decoration: line-through;
+}
+
+.input__list li.checked:before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 7px;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #FF8888;
+  color: white;
+}
+
+.delete {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .wrapper {
+    margin: 25% 26px;
+  }
+  
+  .input__content {
+    flex-direction: column;
+}
+  .input__click {
+    margin-top: 10px;
+    width: 30%;
+  }  
+}

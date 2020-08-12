@@ -1,5 +1,4 @@
-/* eslint-disable */
-document.querySelector('form').addEventListener('submit', function (e) {
+document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
   const nickname = document.querySelector('input[name=nickname]').value;
   const email = document.querySelector('input[name=e-mail]').value;

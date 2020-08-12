@@ -20,5 +20,18 @@ DOM 的事件傳遞，會先從 ```window```（網頁）開始往下傳遞到點
 
 ## 什麼是 event delegation，為什麼我們需要它？
 
+event delegation 又稱作是「事件代理」。
+
+若是我們想要幫網頁上呈現的按鈕進行事件監聽，假如按鈕有 100 個，而且性質又很類似的話，接著要對每個按鈕進行監聽，如果乖乖設置 100 個 ```eventListener()``` 會是一件很沒效率的事情。因此，透過事件傳遞時，冒泡階段會由下往上回傳的特質，這時候只要在點擊目標的上層，進行事件監聽，就可以針對其性質相同的按鈕同步進行調整。
+
 
 ## event.preventDefault() 跟 event.stopPropagation() 差在哪裡，可以舉個範例嗎？
+
+* event.preventDefault()：取消瀏覽器的預設行為。
+
+舉例來說，為了要阻止超連結，我們在設置超連結的節點輸入```preventDefault()```等程式碼，這樣就會阻止原先點擊超連結的預設行為（新開分頁或是跳轉）。其中要特別注意的是```preventDefault()```跟 JavaScript 的事件傳遞是沒有關係的，加上```preventDefault()```等程式碼，並不會影響事件往下傳遞。
+
+
+* event.stopPropagation()：取消事件傳遞。
+
+若是```stopPropagation()```等程式碼被放在事件捕獲節點上， 這樣之後的事件傳遞會停止。這裡指的事件傳遞會停止，是指不會把事件傳遞給「下一個節點」，但若是同一節點上有其他的 listener 還是會被執行到。若是你想要讓其他同一層級的 listener 也不要被執行，可以改用```e.stopImmediatePropagation()	```。

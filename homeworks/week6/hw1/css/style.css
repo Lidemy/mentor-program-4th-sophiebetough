@@ -38,7 +38,7 @@
 
 .navbar__list li.active,
 .navbar__list li:hover {
-  background: #ff7286
+  background: #ff7286;
 }
 
 .navbar__list li.active a,

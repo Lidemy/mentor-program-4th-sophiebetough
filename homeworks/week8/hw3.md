@@ -20,7 +20,7 @@ JSONP 是 JSON with Padding 的簡稱，是一種跨網域存取資料的方法�
 
 ## 要如何存取跨網域的 API？
 
-* CORS 全名為 Cross-Origin Resource，中文稱為跨來源資源共享。我們知道在受到瀏覽器上同源政策的限制，在不同網域之間無法隨意交換資料。因次，若是想要在不同 origin 之間傳輸資料的話，即可透過 CORS。當你想要開啟跨來源的請求時，server 必須在 response 的 Header 裡面加上```Access-Control-Allow-origin```；當瀏覽器收到 response 之後，會先檢查```Access-Control-Allow-origin```裡面的內容，如果裡面有包含目前發起 request 的 origin 的話，就會允許通過，讓程式順利接收到 response，並呈現在網路頁面上。
+* CORS 全名為 Cross-Origin Resource Sharing，中文稱為跨來源資源共享。我們知道在受到瀏覽器上同源政策的限制，在不同網域之間無法隨意交換資料。因次，若是想要在不同 origin 之間傳輸資料的話，即可透過 CORS。當你想要開啟跨來源的請求時，server 必須在 response 的 Header 裡面加上```Access-Control-Allow-origin```；當瀏覽器收到 response 之後，會先檢查```Access-Control-Allow-origin```裡面的內容，如果裡面有包含目前發起 request 的 origin 的話，就會允許通過，讓程式順利接收到 response，並呈現在網路頁面上。
 
 * JSONP 也可以存取跨來源的資料，不過會有一個缺點是你要帶的參數會直接附加在網址上（透過 GET 方式帶過去），沒辦法使用 POST ，這樣也許會產生資料隱私的疑慮。
 

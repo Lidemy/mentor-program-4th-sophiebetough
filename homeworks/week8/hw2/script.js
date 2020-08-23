@@ -58,5 +58,5 @@ function streamBox(game) {
 		}
 		streamCard.innerHTML = str
 	} 
-	xhr.send()
+	xhr.send();
 }

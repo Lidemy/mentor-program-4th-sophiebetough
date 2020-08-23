@@ -1,9 +1,9 @@
 /* eslint-disable */
-const apiUrl = 'https://dvwhnbka7d.execute-api.us-east-1.amazonaws.com/default/lottery'
-const errorMessage = '系統不穩定，請再試一次'
+const apiUrl = 'https://dvwhnbka7d.execute-api.us-east-1.amazonaws.com/default/lottery';
+const errorMessage = '系統不穩定，請再試一次';
 function prizeBox(cb) {
-	const request = new XMLHttpRequest()
-	request.open('GET', apiUrl, true)
+	const request = new XMLHttpRequest();
+	request.open('GET', apiUrl, true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			let data
@@ -27,7 +27,7 @@ function prizeBox(cb) {
   request.onerror = function() {
   	cb(errorMessage)
   }
-  request.send()
+  request.send();
 }
 
 document.querySelector('.lottery-info__btn').addEventListener('click', () => {

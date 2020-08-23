@@ -57,19 +57,19 @@
 .lottery {
   position: relative;
   height: 650px;
-  background: url('../images/main.png') center/cover no-repeat;
+  background: url('../images/mainimage.png') center/cover no-repeat;
 }
 
 .lottery.first-prize {
-  background: url('../images/plane.jpg') center/cover no-repeat;
+  background: url('../images/airplane.jpg') center/cover no-repeat;
 }
 
 .lottery.second-prize {
-  background: url('../images/tv.jpg') center/cover no-repeat;
+  background: url('../images/television.jpg') center/cover no-repeat;
 }
 
 .lottery.third-prize {
-  background: url('../images/yt.jpg') center/cover no-repeat;
+  background: url('../images/youtuber.jpg') center/cover no-repeat;
 }
 
 .lottery.none-prize {

@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+	background: #f7f7f7;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+.warning {
+	background: #f57884;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #faf0f1;
+}
+
+.error {
+	color: #f57884;
+	font-size: 20px;
+
+}
+
+.board {
+	background: white;
+	width: 100%;
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	box-shadow: 1px 1px 3px #e8e8e8;
+	border-radius: 5px;
+}
+
+.board__title {
+	font-weight: lighter;
+	font-size: 38px;
+	/*margin-top: 16px;*/
+}
+
+.board__title-register {
+	font-weight: normal;
+	font-size: 38px;
+	margin-top: 16px;
+
+}
+
+.board__new-comment-form {
+	margin-top: 16px;
+}
+
+.board__new-comment-form textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #c2dffb;
+}
+
+.board__nickname {
+	margin-bottom: 10px;
+}
+
+.board__nickname input {
+	border: 1px solid #c2dffb;
+	padding: 3px;
+}
+
+.board__submit-btn {
+	margin-top: 5px;
+	border: 1px solid #c2dffb;
+	border-radius: 5px;
+	padding: 3px;
+	width: 100px;
+	font-size: 14px;
+}
+
+.board__hr {
+	border: 0.6px solid #e8e8e8;
+	margin : 20px auto;
+	max-width: 98%;
+}
+
+.card {
+	display: flex;
+	margin: 30px 0;
+	min-height: 70px;
+
+}
+
+.card__avatar {
+	min-width: 60px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #e4f0fb;
+}
+
+.card__body {
+	margin-left: 8px;
+}
+
+.card__info {
+	display: inline-block;
+	max-width: 560px;
+}
+
+.card__author {
+	color: #5c9edc;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.card__time {
+	color: #a0a0a0;
+	margin-left: 8px;
+}
+
+.card__content {
+	margin-top: 3px;
+	white-space: pre-line;
+	word-break: break-all;
+}
+
+.board__btn {
+	display: inline-block;
+	margin-top: 5px;
+	border: 1px solid #c2dffb;
+	border-radius: 5px;
+	padding: 3px;
+	width: 80px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.board__greeting {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.hide {
+	display: none;
+}
+
+.board__nickname-form {
+	margin-top: 20px;
+}
+
+.page__info {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.paginator {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.paginator a {
+	margin-left: 4px;
+	text-decoration: none;
+	color: #5c9edc;
+	border: 0.5px solid #5c9edc;
+	padding: 6px;
+}
+
+.board__title-admin {
+	font-weight: normal;
+	font-size: 38px;
+}
+
+.card__role-admin a {
+	display: inline-block;
+	margin-top: 5px;
+	border: 1px solid #c2dffb;
+	border-radius: 5px;
+	padding: 3px;
+	width: 80px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}

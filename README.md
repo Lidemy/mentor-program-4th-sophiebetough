@@ -1,6 +1,6 @@
 # 程式導師實驗計畫第四期
 
-備註：十六週以後的課程尚未完成，作業也還沒決定
+備註：二十週以後的課程尚未完成，作業也還沒決定
 
 ## 這是什麼
 
@@ -244,7 +244,7 @@ Mindset 建立：
 - [ ] P1 你知道什麼是 API
 - [ ] P1 你會使用 node.js 寫出串接 API 的程式
 - [ ] P1 你知道 HTTP method 有哪些
-- [ ] P1 你知道基本的 HTTP statud code，像是 200、301、400、404、500
+- [ ] P1 你知道基本的 HTTP status code，像是 200、301、400、404、500
 
 ### 第五週（07/13 ~ 07/19）：複習週
 
@@ -500,7 +500,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 1. 什麼是 Promise？
 2. 什麼是 Fetch？
 
-在 CSS 的部分呢，也會補充兩個小主題：
+在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：
 
 1. CSS Selector 權重的計算方式
 2. CSS Sprites 與 Data URI
@@ -520,7 +520,13 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
 
-其他的補充如下：（連結待補）
+其他的補充如下：
+
+1. [Fetch 與 Promise 補充系列（一）：初探 Fetch](https://youtu.be/_8cLWMAQe3A)
+2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
+3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
+4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
+5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
 
 [HW13 作業連結](/homeworks/week13)
 
@@ -559,8 +565,10 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 1. [部署 AWS EC2 遠端主機 + Ubuntu LAMP 環境 + phpmyadmin](https://github.com/Lidemy/mentor-program-2nd-yuchun33/issues/15)
 2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
 3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
+4. [[紀錄] 部屬 AWS EC2 雲端主機 + LAMP Server + phpMyAdmin](https://mtr04-note.coderbridge.io/2020/09/15/-%E7%B4%80%E9%8C%84-%08-%E9%83%A8%E5%B1%AC-aws-ec2-%E9%9B%B2%E7%AB%AF%E4%B8%BB%E6%A9%9F-/)
+5. [AWS EC2 佈署網站：卡關記錄](https://nicolakacha.coderbridge.io/2020/09/16/launch-website/)
 
-接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究。可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
+接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
 
 然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。
 
@@ -608,18 +616,33 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 這次的第一個重點在於物件導向，之前都沒有時間好好講過，這一週特別講一下物件導向。
 
-再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制。
+再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制，這邊有兩個地方要特別注意。
 
-第一個重點是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
+第一個是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
 
-第二個重點就是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
+第二個是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
 
 #### 指定教材
 
 1. [JS201] 進階 JavaScript：那些你一直搞不懂的地方
 2. [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
-如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk)
+可以搭配其他我寫的文章一起閱讀：
+
+1. [該來理解 JavaScript 的原型鍊了](https://blog.huli.tw/2017/08/27/the-javascripts-prototype-chain/)
+2. [深入探討 JavaScript 中的參數傳遞：call by value 還是 reference？](https://blog.huli.tw/2018/06/23/javascript-call-by-value-or-reference/)
+3. [我知道你懂 hoisting，可是你了解到多深？](https://blog.huli.tw/2018/11/10/javascript-hoisting-and-tdz/)
+4. [所有的函式都是閉包：談 JS 中的作用域與 Closure](https://blog.huli.tw/2018/12/08/javascript-closure/)
+5. [淺談 JavaScript 頭號難題 this：絕對不完整，但保證好懂](https://blog.huli.tw/2019/02/23/javascript-what-is-this/)
+6. [JavaScript 中的同步與非同步（上）：先成為 callback 大師吧！](https://blog.huli.tw/2019/10/04/javascript-async-sync-and-callback/)
+7. [覺得 JavaScript function 很有趣的我是不是很奇怪](https://blog.huli.tw/2020/04/18/javascript-function-is-awesome/)
+
+如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk) （內容有很多應該都該 JS201 類似，所以有時間再看就好，沒看也沒關係）
+
+物件導向的地方我自己沒有很熟，所以還在探索怎麼教會比較好，這邊有兩個第二期的影片，會用 PHP 跟 JavaScript 當範例。會用 PHP 是因為 JS 中的物件導向並不完整，而 PHP 的完整許多，但要注意影片中會在 PHP 跟 JS 中切換，建議大家只需要了解一些基本概念即可，不需要執著於一定要完全搞懂物件導向：
+
+1. [程式導師實驗計畫第二期：Week5-2：物件導向程式設計](https://www.youtube.com/watch?v=nZhzLcV9eHI&ab_channel=Lidemy%E9%8B%B0%E5%AD%B8%E9%99%A2)
+2. [Week5 物件導向（續）：繼承與 static](https://www.youtube.com/watch?v=k5TGAw7faNg&ab_channel=Lidemy%E9%8B%B0%E5%AD%B8%E9%99%A2)
 
 [HW16 作業連結](/homeworks/week16)
 
@@ -633,18 +656,25 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 - [ ] P1 你能夠舉出一個運用 Closure 的例子
 - [ ] P1 你知道 Prototype 在 JavaScript 裡是什麼
 - [ ] P1 你知道大部分情況下 this 的值是什麼
+- [ ] P2 你知道物件導向的基本概念（類別、實體、繼承、封裝）
 
 ### 第十七週（10/05 ~ 10/11）：現代後端開發（上）
 
 [Express](https://expressjs.com/) 是可以在 Node.js 環境下執行的輕量後端框架，自由度極高，也能夠快速開發出後端應用程式。
 
-跟其他有完整 MVC 架構的框架相比，Express 其實鬆散（或者說自由）很多，許多地方並沒有強制規範，都只是按照前人的方法或者是慣例來實踐，十個人可能會有十種不的寫法。
+跟其他有完整 MVC 架構的框架相比，Express 其實鬆散（或者說自由）很多，許多地方並沒有強制規範，都只是按照前人的方法或者是慣例來實踐，十個人可能會有十種不同的寫法。
 
 有了之前 PHP 以及 JS 的基礎，我相信學習 Express 會快速許多，因此在這一週裡面可以試試看能不能快速上手 Express 並完成作業。
 
+除了 Express 以外，這一週還要介紹一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射（mapping），優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
+
+而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
+
+最後會把這週的專案部署到免費的空間 [Heroku](https://www.heroku.com/)或是自己的主機（nginx + PM2）。
+
 #### 指定教材：
 
-1. [BE201] Express 與 Sequelize：「ORM 與 Sequelize」單元前所有內容
+1. [BE201] Express 與 Sequelize：全部
 
 [HW17 作業連結](/homeworks/week17)
 
@@ -652,31 +682,35 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 - [ ] P1 學習如何使用 Express 及其相關套件
 - [ ] P1 我理解為什麼會需要框架
+- [ ] P1 了解什麼是 ORM
+- [ ] P1 了解 ORM 的優缺點
+- [ ] P1 了解什麼是 N+1 problem 
+- [ ] P1 我知道如何部署 Node.js 應用程式到 heroku
 
 ### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
 
-上一週我們學會了 Express，對基本的操作都已經很熟悉了。
+上週已經熟悉的基本的 Express + Sequelize 開發，而這一週我們會把之前做的餐廳網站移植過來 Express，並且加入後台的功能，讓我們可以有一個相對完整的專案。
 
-這一週要介紹的是一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射，優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
+這週會做的東西主要有：
 
-而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
+1. 移植餐廳網站
+2. 新增餐廳後台，管理菜單
+3. 新增餐廳後台，管理常見問題
 
-最後會使用 Nginx + PM2 來部署我們之前寫好的 Web Application。
+這週大致上需要用到的東西在上一週都學到了，核心概念跟上一週沒有什麼差，如果你有時間壓力的話，可以跳過這一週的作業。
 
 #### 指定教材
 
-[BE201] Express 與 Sequelize 全部看完
+1. [BE201] Express 與 Sequelize 全部看完
 
 [HW18 作業連結](/homeworks/week18)
 
 #### 自我檢測
 
-- [ ] P1 了解什麼是 ORM
-- [ ] P1 了解 ORM 的優缺點
-- [ ] P1 了解什麼是 N+1 problem 
-- [ ] P1 我知道如何使用 Nginx
-- [ ] P1 我知道如何使用 PM2
-- [ ] P1 我知道如何部署 Node.js 應用程式
+- [ ] P1 我能夠從頭把一個網站獨立建起來
+- [ ] P1 我知道如何部署 Node.js 的網站到自己的主機
+- [ ] P2 我知道如何使用 Nginx
+- [ ] P2 我知道如何使用 PM2
 
 ### 第十九週（10/19 ~ 10/25）：產品開發流程
 
@@ -684,9 +718,11 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 這一週會帶大家看看學習系統在開發新功能時的一些記錄，讓大家看看產品開發流程會長什麼樣子。
 
-除了產品開發流程以外，這週也會帶大家練習全新的思考模式，並且做一個簡單的前端框架出來，幫以後的學習鋪路。
+然後這一週的作業呢，就是讓大家有充足的時間來規劃一下自己之後期末專案想要開發什麼樣的產品。
 
 #### 指定教材
+
+1. [PD101] 淺談產品開發與工作流程：全部
 
 [HW19 作業連結](/homeworks/week19)
 

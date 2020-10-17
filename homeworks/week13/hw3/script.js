@@ -62,20 +62,12 @@ function streamBox(game) {
 		for (let i = 0; i < liveGame.streams.length; i += 1) {
 			str +=
 			`<div class="stream__card">
-					<div class="stream__image">
-						<img src=${liveGame.streams[i].preview.large} />
-					</div>
+					<div class="stream__image"><img src=${liveGame.streams[i].preview.large} /></div>
 					<div class="stream__content">
-						<div class="stream__avatar">
-							<img src=${liveGame.streams[i].channel.logo} />
-						</div>
+						<div class="stream__avatar"><img src=${liveGame.streams[i].channel.logo} /></div>
 						<div class="stream__desc">
-							<div class="stream__desc-channel">
-								${liveGame.streams[i].channel.status}
-							</div>
-							<div class="stream__desc-id">
-								${liveGame.streams[i].channel.display_name}
-							</div>
+							<div class="stream__desc-channel">${liveGame.streams[i].channel.status}</div>
+							<div class="stream__desc-id">${liveGame.streams[i].channel.display_name}</div>
 						</div>
 					</div>					
 				</div>`

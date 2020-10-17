@@ -1,0 +1,25 @@
+.form-title {
+	margin: 30px auto;
+	text-align: center;
+}
+
+.button-top{
+ margin: 0 auto;
+}
+
+.form-top {
+ margin: 10px auto;
+}
+
+.todo-list {
+	margin: 0 auto;
+	display: flex !important;
+}
+
+.todo-btn-group {
+	justify-content: flex-end;
+}
+
+.hide {
+	display: none !important;
+}

@@ -24,6 +24,7 @@
 		die($conn->error);
 	}
 
+	// 註冊完之後，就可以直接登入	
 	$_SESSION['username'] = $username;
 	header("Location: index.php");
 ?>

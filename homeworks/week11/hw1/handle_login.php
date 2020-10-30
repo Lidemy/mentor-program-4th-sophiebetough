@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	session_start(); // 宣布要用 session 機制
 	require_once("./conn.php");
 	require_once("./utils.php"); 
 
@@ -22,11 +22,12 @@
 
 	$result = $stmt->get_result();
 
+	// 查無使用者
 	if ($result->num_rows === 0) {
 		header("Location: login.php?errCode=2");
 		exit();
 	}
-	// 有查到使用者
+	// 查到使用者之後
 	$row = $result->fetch_assoc();
 	if (password_verify($password, $row['password'])) {
 		// 登入成功
